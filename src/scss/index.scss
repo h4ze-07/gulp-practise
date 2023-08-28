@@ -1,0 +1,28 @@
+@import '_colors';
+
+$autocenter: 20px auto;
+
+.main {
+    margin: $autocenter;
+    width: 400px;
+    height: 250px;
+    background: $black;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        color: $red;
+        text-align: center;
+        width: 100%;
+    }
+    &__btn {
+        background-color: $btnbg;
+        border: 1px solid $red;
+        color: $red;
+        padding: 5px 15px;
+        margin: 10px auto;
+        &:hover {
+            background: $black;
+            cursor: pointer;
+        }
+    }
+}
